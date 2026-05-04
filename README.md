@@ -1,6 +1,6 @@
 # SEO Skill (Antigravity / Claude / Codex)
 
-An LLM-first SEO analysis skill for agent IDEs, with 16 specialized sub-skills, 10 specialist agents, and 33 scripts used as evidence collectors and workflow automation.
+An AI-native SEO analysis toolkit built for agent IDEs. It ships with 16 focused sub-skills, 10 specialist agents, and 33 automation scripts that collect evidence and drive workflows — so you spend less time digging and more time fixing.
 
 ## IDE Compatibility
 
@@ -8,7 +8,7 @@ An LLM-first SEO analysis skill for agent IDEs, with 16 specialized sub-skills, 
 - Claude Code (`~/.claude/skills/seo`)
 - Codex (`~/.codex/skills/seo`)
 
-## 📦 Current Inventory
+## 📦 What's Inside
 
 - Specialized sub-skills: `16`
 - Specialist agents: `10`
@@ -28,48 +28,47 @@ Suggested GitHub topics:
 seo, llm, github-seo, ai-search, geo, aeo, technical-seo, schema, core-web-vitals, codex, claude-code, antigravity
 ```
 
+## ✨ Sub-Skills at a Glance
 
-## ✨ Features
-
-| Sub-Skill | Description |
+| Sub-Skill | What it does |
 |-----------|-------------|
-| `seo audit` | Full website audit with evidence-backed scoring |
-| `seo article` | Article data extraction & LLM-driven content optimization |
-| `seo page` | Deep single-page analysis |
-| `seo technical` | Crawlability, indexability, security, Core Web Vitals, AI crawlers |
-| `seo content` | Content quality & E-E-A-T assessment (Sept 2025 QRG) |
-| `seo schema` | Schema.org detection, validation & JSON-LD generation |
-| `seo sitemap` | XML sitemap analysis & generation |
-| `seo images` | Image optimization audit (alt text, formats, lazy loading, CLS) |
-| `seo geo` | Generative Engine Optimization — AI Overviews, ChatGPT, Perplexity |
-| `seo aeo` | Answer Engine Optimization — Featured Snippets, PAA, Knowledge Panel |
-| `seo links` | Link profile analysis — internal links, backlinks, anchor text, orphan pages |
-| `seo programmatic` | Programmatic SEO safeguards & quality gates |
-| `seo competitors` | Comparison & alternatives page generation |
-| `seo hreflang` | International SEO / hreflang validation |
-| `seo plan` | Strategic SEO planning with topical clusters & industry templates |
-| `seo github` | GitHub repository SEO: metadata/topics, README quality, community profile, query benchmarking, traffic archiving |
+| `seo audit` | End-to-end site audit with scored, evidence-backed findings |
+| `seo article` | Pulls article data and drives LLM-powered content improvements |
+| `seo page` | Thorough single-page deep-dive |
+| `seo technical` | Covers crawlability, indexability, security, Core Web Vitals, and AI crawler access |
+| `seo content` | Scores content quality and E-E-A-T signals against the Sept 2025 QRG |
+| `seo schema` | Finds, validates, and generates Schema.org JSON-LD |
+| `seo sitemap` | Audits XML sitemaps and generates corrected versions |
+| `seo images` | Checks alt text, formats, lazy loading, and CLS impact |
+| `seo geo` | Readiness check for Generative Engine Optimization — AI Overviews, ChatGPT, Perplexity |
+| `seo aeo` | Targets Featured Snippets, People Also Ask, and Knowledge Panel eligibility |
+| `seo links` | Maps internal links, backlink profiles, anchor text, and orphan pages |
+| `seo programmatic` | Quality gates and safeguards for programmatic SEO |
+| `seo competitors` | Generates comparison and alternatives pages |
+| `seo hreflang` | Validates international SEO and hreflang configuration |
+| `seo plan` | Builds strategic topical clusters using industry-specific templates |
+| `seo github` | Audits GitHub repo SEO: metadata, README quality, community health, query benchmarking, and traffic archiving |
 
-## 🧠 LLM-First Workflow
+## 🧠 How It Works
 
-This skill is designed for reasoning-first SEO analysis:
+This skill is reasoning-first — the LLM leads, scripts support.
 
-1. Collect page evidence (`read_url_content` first, scripts optional).
-2. Analyze with LLM using explicit proof for each finding.
-3. Apply confidence labels (`Confirmed`, `Likely`, `Hypothesis`).
-4. Prioritize by impact and effort.
-5. Produce a structured action plan.
+1. Fetch page content (`read_url_content` comes first; scripts are optional extras).
+2. Analyze with the LLM, citing explicit evidence for every finding.
+3. Label confidence clearly: `Confirmed`, `Likely`, or `Hypothesis`.
+4. Rank issues by impact and effort.
+5. Output a clean, structured action plan.
 
 ### Required Rubric
 
-All audits should apply:
+Every audit applies:
 - `resources/references/llm-audit-rubric.md`
 
-The rubric standardizes:
-- evidence format (`Finding`, `Evidence`, `Impact`, `Fix`)
-- severity (`Critical`, `Warning`, `Pass`, `Info`)
-- confidence labeling
-- output contract for audit reports
+The rubric keeps outputs consistent across:
+- Evidence format (`Finding`, `Evidence`, `Impact`, `Fix`)
+- Severity levels (`Critical`, `Warning`, `Pass`, `Info`)
+- Confidence labeling
+- Report output contracts
 
 ## 🤖 Specialist Agents
 
@@ -77,38 +76,38 @@ The rubric standardizes:
 - **Content Quality** — E-E-A-T scoring, AI content detection
 - **Performance** — Core Web Vitals (LCP, INP, CLS) analysis
 - **Schema Markup** — JSON-LD detection, validation, generation
-- **Sitemap** — XML sitemap validation, quality gates
+- **Sitemap** — XML sitemap validation and quality gates
 - **Visual Analysis** — screenshots, above-the-fold, responsiveness (Playwright)
-- **GitHub Analyst** — metadata, topics, README, trust, title strategy
+- **GitHub Analyst** — metadata, topics, README quality, trust signals, title strategy
 - **GitHub Benchmark** — query ranking and competitor intelligence
 - **GitHub Data** — API/auth fallback and traffic archival continuity
-- **Verifier (Global)** — dedupe/contradiction suppression before final reporting
+- **Verifier (Global)** — deduplicates and suppresses contradictions before final reporting
 
 ## 📚 Reference Data (Updated Feb 2026)
 
 - Core Web Vitals thresholds (INP replaced FID)
 - E-E-A-T framework (Sept 2025 QRG + Dec 2025 core update)
 - Schema.org types — active, restricted, deprecated
-- Content quality gates & word count minimums
+- Content quality gates and word count minimums
 - Google SEO quick reference
 - LLM audit rubric for consistent outputs
 
 ## 🏭 Industry Templates
 
-Pre-built strategy templates for: **SaaS**, **E-commerce**, **Local Business**, **Publisher/Media**, **Agency**, and **Generic** businesses.
+Ready-to-use strategy templates for: **SaaS**, **E-commerce**, **Local Business**, **Publisher/Media**, **Agency**, and **Generic** businesses.
 
 ---
 
-## 🔧 Installation (All IDEs)
+## 🔧 Installation
 
-### Quick Install Script (Antigravity / Claude / Codex)
+### Quick Install (Antigravity / Claude / Codex)
 
 ```bash
 # 1) Clone
 git clone https://github.com/Bhanunamikaze/Agentic-SEO-Skill.git
 cd Agentic-SEO-Skill
 
-# 2) Install for your target
+# 2) Pick your target
 # Antigravity (project-local):
 bash install.sh --target antigravity --project-dir /path/to/your/project
 
@@ -128,7 +127,7 @@ bash install.sh --target all --project-dir /path/to/your/project
 bash install.sh --target codex --repo-path /path/to/Agentic-SEO-Skill
 ```
 
-### Install directly from GitHub (remote source mode):
+### Install directly from GitHub:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Bhanunamikaze/Agentic-SEO-Skill/main/install.sh | \
@@ -137,26 +136,24 @@ curl -fsSL https://raw.githubusercontent.com/Bhanunamikaze/Agentic-SEO-Skill/mai
 
 ### Manual Installation
 
-### Step 1: Clone the Repository
+#### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/Bhanunamikaze/Agentic-SEO-Skill.git
 ```
 
-### Step 2: Install Python Dependencies
+#### Step 2: Install Python Dependencies
 
 ```bash
 pip install requests beautifulsoup4
 ```
 
-**Optional** — for visual analysis (screenshots & layout checks):
+**Optional** — visual analysis (screenshots and layout checks):
 ```bash
 pip install playwright && playwright install chromium
 ```
 
-### Step 3: Choose Target Directory (Manual Install)
-
-If you prefer not to use `install.sh`, copy or symlink manually:
+#### Step 3: Copy to Your Target Directory
 
 #### Antigravity IDE (project-local)
 
@@ -182,9 +179,9 @@ cp -r /path/to/Agentic-SEO-Skill ~/.codex/skills/seo
 # or: ln -s /path/to/Agentic-SEO-Skill ~/.codex/skills/seo
 ```
 
-### Step 4: Verify Triggering
+### Step 4: Test the Trigger
 
-The skill will auto-trigger when you mention SEO-related keywords in your IDE. Try:
+The skill activates automatically when you use SEO-related language in your IDE. Try:
 
 - *"Run an SEO audit on example.com"*
 - *"Check the schema markup on my homepage"*
@@ -194,18 +191,18 @@ The skill will auto-trigger when you mention SEO-related keywords in your IDE. T
 
 ---
 
-## 💬 Example Prompts (hackingdream.net)
+## 💬 Example Prompts
 
-### How Prompts Route to Agents & Scripts
+### How the Routing Works
 
-The IDE uses an **LLM orchestration layer** to match your natural language intent to the correct underlying sub-skill (e.g., `seo-hreflang.md`, `seo-schema.md`). You do not need to use explicit flags or commands.
+The IDE uses an **LLM orchestration layer** to map your natural language to the right sub-skill (e.g., `seo-hreflang.md`, `seo-schema.md`). No flags or special syntax required.
 
-- **To run a specific test:** Ask for it specifically (e.g., "Check hreflang"). The LLM will only trigger the necessary scripts.
-- **To force ALL agents/tests:** Ask for a "full, comprehensive audit running all checks". The LLM will route this to `seo-audit.md`, which acts as the master orchestrator calling all available scripts and analyzing the combined output.
+- **Targeted test:** Name it specifically ("Check hreflang") and only the relevant scripts run.
+- **Full audit:** Ask for "a full, comprehensive audit running all checks" and the LLM routes to `seo-audit.md`, which orchestrates everything.
 
-Here's how specific phrases map to the skill's capabilities:
+Here's how common phrases map to agents and scripts:
 
-| You type... | Scope | Agent(s) activated | Scripts used |
+| You type... | Scope | Agents activated | Scripts used |
 |-------------|-------|-------------------|--------------|
 | "Run SEO audit" | 🌐 Full domain | **All 6 core website agents** (technical, content, schema, performance, sitemap, visual) | `parse_html.py`, `pagespeed.py`, `robots_checker.py`, `security_headers.py`, `broken_links.py`, `readability.py` |
 | "Analyze this article" / blog post URL | 📄 Single page | **Content** + **Schema** + **Technical** | `article_seo.py`, `parse_html.py`, `readability.py` |
@@ -227,12 +224,12 @@ Here's how specific phrases map to the skill's capabilities:
 | "GSC data" / "Search Console" | 📈 GSC only | None | `gsc_checker.py` |
 | "GitHub SEO" / "optimize this repo" | 🐙 Repository | **GitHub Analyst** + **Benchmark** + **Data** + **Verifier** | `github_repo_audit.py`, `github_readme_lint.py`, `github_community_health.py`, `github_search_benchmark.py`, `github_competitor_research.py`, `github_traffic_archiver.py`, `github_seo_report.py`, `finding_verifier.py` (outputs `GITHUB-SEO-REPORT.md` + `GITHUB-ACTION-PLAN.md`) |
 
-### Domain vs URL vs Blog Post — What's Different?
+### Domain vs URL vs Blog Post — What changes?
 
 | Input type | What happens | Example |
 |-----------|-------------|---------|
-| **Domain** (`hackingdream.net`) | Crawls multiple pages, checks robots.txt, sitemap, site-wide patterns | Full audit, link profile, sitemap check |
-| **URL** (`hackingdream.net/page`) | Single page deep-dive: HTML, meta, schema, content, CWV | Page audit, schema check, technical check |
+| **Domain** (`hackingdream.net`) | Crawls multiple pages, checks robots.txt, sitemap, and site-wide patterns | Full audit, link profile, sitemap check |
+| **URL** (`hackingdream.net/page`) | Single-page deep-dive: HTML, meta, schema, content, Core Web Vitals | Page audit, schema check, technical check |
 | **Blog post URL** | Article-specific: readability, keyword density, heading structure, JSON-LD `Article`/`BlogPosting` schema, publish date | Article analysis, AEO check |
 
 ---
@@ -359,16 +356,14 @@ Take desktop and mobile screenshots of https://hackingdream.net and analyze abov
 
 ### Run Everything at Once
 
-To run **all** analysis types on a single URL:
-
 ```text
 Run a complete SEO audit on https://hackingdream.net — include technical, content, schema, performance,
 links, GEO, AEO, entity SEO, and sitemap analysis. Provide a prioritized action plan.
 ```
 
-Example generated outputs:
-- `FULL-AUDIT-REPORT.md` — comprehensive findings
-- `ACTION-PLAN.md` — prioritized fixes
+Outputs generated:
+- `FULL-AUDIT-REPORT.md` — all findings in one place
+- `ACTION-PLAN.md` — prioritized fixes, ready to act on
 
 ![Example prompt and generated outputs](docs/images/example-prompt-output.png)
 
@@ -376,36 +371,29 @@ Example generated outputs:
 
 ## 📊 Report Generation
 
-You can generate reports in two ways:
+Two ways to get a report:
 
-1. **LLM-first report in your IDE (Antigravity / Claude / Codex)** (recommended for strategy + prioritization):
+**1. LLM-first report in your IDE** (best for strategy and prioritization):
 
 ```text
 Run a full SEO audit for https://hackingdream.net and produce a prioritized action plan with evidence for each finding.
 ```
 
-2. **Interactive HTML dashboard** (recommended for shareable technical snapshots):
+**2. Interactive HTML dashboard** (best for shareable technical snapshots):
 
 ```bash
 python3 scripts/generate_report.py "https://hackingdream.net" --output seo-report-hackingdream.html
 ```
 
-The HTML report includes:
-- overall score and category breakdown
-- environment detection (platform/runtime inference)
-- environment-specific fix plan
-- section-level issues and recommendations
-- readability "what to replace" suggestions
-
-Example generated dashboard:
+The HTML report includes an overall score, category breakdowns, environment detection, a platform-specific fix plan, and readability suggestions showing exactly what to rewrite.
 
 ![SEO report dashboard example](docs/images/report-dashboard.png)
 
 ---
 
-## ⚙️ Optional Script Workflow
+## ⚙️ Running Scripts Directly
 
-Use scripts when you need additional verification or structured JSON outputs.
+Use scripts when you need extra verification or structured JSON output.
 
 ```bash
 # GitHub auth setup for repository SEO scripts (choose one)
@@ -435,7 +423,7 @@ python3 scripts/internal_links.py "$URL" --depth 1 --max-pages 20 --json
 python3 scripts/broken_links.py "$URL" --workers 5 --json
 python3 scripts/article_seo.py "$URL" --json
 
-# New analysis scripts
+# Specialized analysis
 python3 scripts/hreflang_checker.py "$URL" --json
 python3 scripts/entity_checker.py "$URL" --json
 python3 scripts/duplicate_content.py "$URL" --json
@@ -458,26 +446,27 @@ python3 scripts/github_seo_report.py --repo owner/repo --provider auto --markdow
 # Optional: tune auto-derived query count (default: 6)
 # python3 scripts/github_seo_report.py --repo owner/repo --provider auto --auto-query-max 8 --markdown GITHUB-SEO-REPORT.md --action-plan GITHUB-ACTION-PLAN.md --json
 
-# Generic verifier stage (can be used by any workflow before final reporting)
+# Verifier stage (run before final reporting to deduplicate findings)
 python3 scripts/finding_verifier.py --findings-json raw-findings.json --json
 ```
 
-Generate a single HTML dashboard if needed:
+Generate a single HTML dashboard:
 
 ```bash
 python3 scripts/generate_report.py "$URL"
 ```
+
 ---
 
-## 🛡️ Critical Rules Enforced
+## 🛡️ Rules Enforced
 
 | Rule | Detail |
 |------|--------|
-| **INP not FID** | FID removed Sept 2024. INP is the sole interactivity metric. |
-| **FAQ schema restricted** | FAQPage only for government/healthcare authority sites (Aug 2023) |
-| **HowTo deprecated** | Rich results removed Sept 2023 |
-| **JSON-LD only** | Never recommend Microdata or RDFa |
-| **E-E-A-T everywhere** | Applies to ALL competitive queries since Dec 2025 |
+| **INP not FID** | FID was removed in Sept 2024. INP is the only interactivity metric. |
+| **FAQ schema restricted** | FAQPage is only valid for government and healthcare authority sites (Aug 2023) |
+| **HowTo deprecated** | Rich results were removed in Sept 2023 |
+| **JSON-LD only** | Microdata and RDFa are never recommended |
+| **E-E-A-T everywhere** | Applies to all competitive queries since Dec 2025 |
 | **Mobile-first complete** | 100% mobile-first indexing since July 2024 |
 | **Location page limits** | ⚠️ Warning at 30+ pages, 🛑 Hard stop at 50+ |
 
@@ -490,15 +479,15 @@ python3 scripts/generate_report.py "$URL"
 | Python | 3.8+ |
 | `requests` | Any |
 | `beautifulsoup4` | Any |
-| Playwright | Optional (for visual analysis) |
+| Playwright | Optional (visual analysis only) |
 
 ---
 
 ## 🙏 Credits
 
-This project is heavily built from **[claude-seo](https://github.com/AgriciDaniel/claude-seo)** by **[AgriciDaniel](https://github.com/AgriciDaniel)**. All core SEO logic, reference data, agent definitions, utility scripts, and sub-skill instructions originate from that project.
+This project builds on **[claude-seo](https://github.com/AgriciDaniel/claude-seo)** by **[AgriciDaniel](https://github.com/AgriciDaniel)**. The core SEO logic, reference data, agent definitions, utility scripts, and sub-skill instructions all originate from that project.
 
-This repository restructures and adapts the content to function as a compatible skill package for **Antigravity IDE**, **Claude Code**, and **Codex**, while preserving the same core skill layout (`SKILL.md` + `scripts/` + `resources/`).
+This repository restructures the content into a compatible skill package for **Antigravity IDE**, **Claude Code**, and **Codex**, while keeping the same core layout (`SKILL.md` + `scripts/` + `resources/`).
 
 ---
 
@@ -506,4 +495,4 @@ This repository restructures and adapts the content to function as a compatible 
 
 Licensed under the MIT License. See [LICENSE](LICENSE).
 
-Portions are derived from [claude-seo](https://github.com/AgriciDaniel/claude-seo), which is also MIT-licensed.
+Portions derived from [claude-seo](https://github.com/AgriciDaniel/claude-seo), also MIT-licensed.
